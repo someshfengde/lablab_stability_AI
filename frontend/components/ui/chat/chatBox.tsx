@@ -54,7 +54,7 @@ export function ChatBox() {
         .map((msg) => msg.text);
 
       try {
-        const response = await fetch("https://6c52-103-123-226-98.ngrok-free.app/generate_stablecode", {
+        const response = await fetch("https://1da1-103-123-226-98.ngrok-free.app/generate_stablecode", {
           method: "POST",
           body: JSON.stringify({
             prompt: assistantMessages + "\n\n" + userMessages + "write response in markdown format",
